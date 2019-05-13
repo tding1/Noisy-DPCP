@@ -1,14 +1,19 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+import matplotlib
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
 
-M = np.loadtxt('M.txt')
-N = np.loadtxt('N.txt')
-cosphi = np.loadtxt('cos_phi.txt')
+M = np.loadtxt('M.txt', delimiter=',')
+N = np.loadtxt('N.txt', delimiter=',')
+sigma = np.loadtxt('sigma.txt', delimiter=',')
+cosphi = np.loadtxt('cos_phi.txt', delimiter=',')
 
 fig = plt.figure(figsize=(10, 8))
 
-cs = plt.scatter(N, M, s=100, marker='s', c=cosphi, cmap=cm.Greys)
+ind = (sigma == sigma[10])
+cs = plt.scatter(N[ind], M[ind], s=100, marker='s', c=cosphi[ind], cmap=cm.Greys)
 x = np.linspace(0, 500, 250)
 y = 0.0083 * x**2 + 0.8333 * x
 plt.plot(x, y, 'r', linewidth=6)
