@@ -1,4 +1,4 @@
-# Code of paper "Noisy Dual Principal Component Pursuit", ICML 2019
+# Code of paper "[Noisy Dual Principal Component Pursuit](http://proceedings.mlr.press/v97/ding19b.html)", ICML 2019
 
 ## Synthetic Experiments
 
