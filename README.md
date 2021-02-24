@@ -27,3 +27,16 @@
 - `/data` is a folder containing annotations for point clouds and corresponding images.
 
 - `/algorithms` is a folder containing various single subspace learning algorithms.
+
+## Citation
+
+If you find the code or results useful, please cite the following paper:
+
+```
+@inproceedings{ding2019noisy,
+	title={Noisy dual principal component pursuit},
+	author={Ding, Tianyu and Zhu, Zhihui and Ding, Tianjiao and Yang, Yunchen and Vidal, Rene and Tsakiris, Manolis and Robinson, Daniel},
+	booktitle={Proceedings of the International Conference on Machine learning},
+	year={2019}
+}
+```
